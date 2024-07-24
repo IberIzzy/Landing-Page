@@ -386,41 +386,4 @@
 		opacity: 1;
 	}
 
-	.name-link {
-		color: inherit;
-		text-decoration: none;
-		position: relative; /* To position the arrow text relative to the link */
-		display: inline-block; /* For proper positioning of the arrow */
-		transition: color 0.3s ease; /* Smooth color transition on hover */
-	}
-	
-	.name-link .arrow-text {
-		display: inline-block;
-		color: #3498db; /* Color for the arrow */
-		font-size: 0.8em; /* Slightly smaller font size for the arrow */
-		position: absolute;
-		top: -1.5em; /* Position the arrow above the name */
-		left: 50%;
-		transform: translateX(-50%); /* Center the arrow above the name */
-		opacity: 0; /* Initially hidden */
-		animation: jump 2s infinite; /* Jumping animation */
-	}
-	
-	.name-link:hover {
-		color: #e67e22; /* Change the name color on hover */
-	}
-	
-	.name-link:hover .arrow-text {
-		opacity: 1; /* Show the arrow on hover */
-	}
-	
-	/* Jumping animation for the arrow */
-	@keyframes jump {
-		0%, 100% {
-			transform: translateX(-50%) translateY(0);
-		}
-		50% {
-			transform: translateX(-50%) translateY(-10px); /* Move the arrow up */
-		}
-	}
 	
